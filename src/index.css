@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Classy Vogue";
+  src: url("/fonts/classyvogueregular-p7rry.otf") format("opentype");
+  font-family: "Gotham";
+  src: url("/fonts/GothamCond-Medium.woff2") format("woff2");
+}
+
+.font-classy {
+  font-family: "Classy Vogue";
+}
+
+.font-gotham {
+  font-family: "Gotham", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Classy Vogue";
+}

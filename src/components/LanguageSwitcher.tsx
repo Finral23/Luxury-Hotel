@@ -18,14 +18,14 @@ function LanguageSwitcher() {
   return (
     <>
       <Menu>
-        <MenuButton className="h-6 flex items-end">
+        <MenuButton className="h-6 flex items-end text-3xl">
           <HiChevronDown className="pb-[1px]" />
           {i18n.language.toUpperCase()}
         </MenuButton>
-        <MenuItems anchor="bottom" className="pl-4">
+        <MenuItems anchor="bottom" className="pl-8 text-2xl">
           <MenuItem>
             <Button
-              className="block text-slate-200"
+              className="block text-slate-200 font-gotham"
               onClick={() => changeLanguage("en")}
             >
               EN
@@ -33,7 +33,7 @@ function LanguageSwitcher() {
           </MenuItem>
           <MenuItem>
             <Button
-              className="block text-slate-200"
+              className="block text-slate-200 font-gotham"
               onClick={() => changeLanguage("ru")}
             >
               RU

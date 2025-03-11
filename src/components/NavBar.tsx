@@ -10,10 +10,12 @@ const NavBar = () => {
       <div className="sm:flex-1 flex justify-start">
         <LanguageSwitcher />
       </div>
-      <Logo />
-      <div className="sm:flex-1 flex justify-end items-center md:gap-5">
+      <div className="invisible sm:visible">
+        <Logo />
+      </div>
+      <div className="sm:flex-1 flex justify-end items-center md:gap-5 text-xl">
         <a className="invisible w-0 md:visible md:w-auto">{t("login")}</a>
-        <button className="flex items-center justify-between gap-2 py-2 px-3 rounded-full bg-gray-950">
+        <button className="flex items-center justify-between gap-2 py-2 px-3 rounded-full bg-gray-900 hover:bg-gray-950">
           {t("bookNow")} <PiCallBellLight />
         </button>
       </div>
