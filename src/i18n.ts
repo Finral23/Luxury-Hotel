@@ -3,12 +3,15 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 
+// Грузим язык из localStorage
+const savedLang = localStorage.getItem("lang") || "en";
+
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
     ru: { translation: ru },
   },
-  lng: "en", // Язык по умолчанию
+  lng: savedLang,
   fallbackLng: "en",
   interpolation: { escapeValue: false },
 });

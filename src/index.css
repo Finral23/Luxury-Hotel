@@ -1,14 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Classy Vogue";
-  src: url("/fonts/classyvogueregular-p7rry.otf") format("opentype");
   font-family: "Gotham";
   src: url("/fonts/GothamCond-Medium.woff2") format("woff2");
 }
 
-.font-classy {
-  font-family: "Classy Vogue";
+.font-playfair {
+  font-family: "Playfair Display", serif;
 }
 
 .font-gotham {
@@ -20,5 +19,5 @@ h2,
 h3,
 h4,
 p {
-  font-family: "Classy Vogue";
+  font-family: "Playfair Display", serif;
 }

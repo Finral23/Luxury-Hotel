@@ -2,6 +2,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "./Logo";
 import { PiCallBellLight } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
+import { memo } from "react";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -23,4 +24,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default memo(NavBar);

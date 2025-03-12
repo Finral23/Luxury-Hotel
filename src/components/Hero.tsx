@@ -1,10 +1,15 @@
 import { useTranslation } from "react-i18next";
 import HeroImage from "./HeroImage";
+import { memo } from "react";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-12 max-w-7xl mx-auto">
+    <div
+      key={i18n.language}
+      className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-12 max-w-7xl mx-auto"
+    >
       <div className="md:w-1/2 text-center md:text-left space-y-6">
         <h1 className="text-6xl">{t("heroHeading")}</h1>
         <h2 className="text-3xl">{t("heroTitle")}</h2>
@@ -19,14 +24,14 @@ const Hero = () => {
       </div>
       <div className="md:w-1/2 flex justify-end ">
         <div className="flex flex-col gap-5">
-          <HeroImage source="1" />
-          <HeroImage source="1" />
-          <HeroImage source="1" />
-          <HeroImage source="1" />
+          <HeroImage source="hero1.png" />
+          <HeroImage source="hero2.png" />
+          <HeroImage source="hero3.png" />
+          <HeroImage source="hero4.png" />
         </div>
       </div>
     </div>
   );
 };
 
-export default Hero;
+export default memo(Hero); // 🔥 Теперь `Hero` не ререндерится без причины
