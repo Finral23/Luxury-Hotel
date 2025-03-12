@@ -1,3 +1,4 @@
+import Booking from "../components/Booking";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import { useBackground } from "../context/BackgroundContext";
@@ -17,7 +18,7 @@ const HomePage = () => {
   return (
     <div
       key={i18n.language}
-      className="relative min-h-screen bg-neutral-800 text-slate-200 font-gotham overflow-hidden"
+      className="relative  bg-zinc-900 text-slate-200 font-gotham overflow-hidden"
     >
       {/* Фоновые изображения */}
       <div className="absolute inset-0 overflow-hidden">
@@ -25,7 +26,7 @@ const HomePage = () => {
           <motion.img
             key={prevImage} // ✅ Правильный ключ
             src={prevImage}
-            className="absolute inset-0 w-full h-full object-cover filter blur-sm"
+            className="absolute inset-0 w-full h-[80vh] lg:h-auto object-cover filter blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -38,6 +39,9 @@ const HomePage = () => {
       <div className="relative z-20">
         <NavBar />
         <Hero />
+        <div className="bg-zinc-900">
+          <Booking />
+        </div>
       </div>
     </div>
   );

@@ -6,6 +6,15 @@
   src: url("/fonts/GothamCond-Medium.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "SFPro";
+  src: url("/fonts/SFProDisplay-Light.woff") format("woff");
+}
+
+.font-sf {
+  font-family: "SFPro";
+}
+
 .font-playfair {
   font-family: "Playfair Display", serif;
 }
@@ -20,4 +29,20 @@ h3,
 h4,
 p {
   font-family: "Playfair Display", serif;
+}
+
+.bg-green-dark {
+  background-color: #214001;
+}
+
+.green-dark {
+  color: #214001;
+}
+
+.bg-green {
+  background-color: #5c902e; /* bg-green-700 */
+}
+
+.bg-gray {
+  background-color: #1c1d20; /* bg-zinc-900 */
 }
