@@ -14,9 +14,10 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl">{t("heroHeading")}</h1>
         <h2 className="text-2xl md:text-3xl">{t("heroTitle")}</h2>
         <p className="text-mono md:text-2xl tracking-wide">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-          pariatur eius necessitatibus, laudantium accusantium ipsum sit! Minus
-          mollitia placeat corrupti.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+          exercitationem eius ratione officia earum autem voluptates aspernatur
+          nulla vitae expedita possimus. Commodi quos rerum magni possimus
+          quibusdam dignissimos, ab porro.
         </p>
         <button className="bg-gradient-to-b from-black to-230% px-10 py-2  text-2xl uppercase tracking-wider rounded-full border-2 border-slate-200 cursor-pointer hover:bg-slate-700">
           {t("heroButton")}

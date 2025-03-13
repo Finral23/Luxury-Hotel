@@ -11,8 +11,17 @@
   src: url("/fonts/SFProDisplay-Light.woff") format("woff");
 }
 
+@font-face {
+  font-family: "SFProThin";
+  src: url("/fonts/SFProDisplay-Thin.ttf") format("truetype");
+}
+
 .font-sf {
   font-family: "SFPro";
+}
+
+.font-sf-thin {
+  font-family: "SFProThin";
 }
 
 .font-playfair {
@@ -110,6 +119,10 @@ p {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.rdrMonths {
+  justify-content: center;
 }
 
 /* 📌 Для мобильных растягиваем календарь на всю ширину */

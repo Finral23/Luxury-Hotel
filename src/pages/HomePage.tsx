@@ -1,6 +1,7 @@
 import Booking from "../components/Booking";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
+import Welcome from "../components/Welcome";
 import { useBackground } from "../context/BackgroundContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -41,6 +42,7 @@ const HomePage = () => {
         <Hero />
         <div className="bg-zinc-900">
           <Booking />
+          <Welcome />
         </div>
       </div>
     </div>

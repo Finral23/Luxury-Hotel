@@ -35,10 +35,14 @@ const DatePicker = ({ onClose, onChange }: DatePickerProps) => {
   };
 
   return (
-    <div className={`fixed inset-0 flex items-center justify-center  z-50`}>
+    <div
+      className={`fixed inset-0 flex items-end justify-start z-50 translate-y-[-10px]`}
+    >
       <div
-        className={`bg-zinc-900 text-slate-200 p-4 rounded-lg shadow-lg w-full max-w-2xl ${
-          isMobile ? "w-full max-w-md" : ""
+        className={`bg-zinc-900 text-slate-200 p-4 rounded-lg shadow-lg md:w-full max-w-2xl ${
+          isMobile
+            ? "w-full max-w-md translate-y-[-20px] mb-10"
+            : "w-auto translate-y-[-50px]"
         }`}
       >
         <DateRange
