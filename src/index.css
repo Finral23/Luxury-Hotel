@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 @font-face {
   font-family: "Gotham";
   src: url("/fonts/GothamCond-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GothamItalic";
+  src: url("/fonts/GothamXNarrow-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GothamNarrow";
+  src: url("/fonts/GothamXNarrow-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,6 +43,14 @@
 
 .font-gotham {
   font-family: "Gotham", sans-serif;
+}
+
+.font-gotham-italic {
+  font-family: "GothamItalic", sans-serif;
+}
+
+.font-gotham-narrow {
+  font-family: "GothamNarrow", sans-serif;
 }
 
 h1,
@@ -155,4 +176,56 @@ ul {
   background-image: url("/list.png"); /* 🔥 Твой кастомный маркер */
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Показываем точки */
+.swiper-pagination {
+  bottom: 10px !important; /* Поднимаем выше */
+  z-index: 10 !important; /* Выше всех элементов */
+  display: flex !important; /* Убедимся, что flex */
+  justify-content: center;
+}
+
+/* Делаем точки крупнее */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: white !important;
+  opacity: 0.5 !important;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+/* Контейнер стрелок */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important; /* Белый цвет */
+  font-size: 20px !important;
+  transition: all 0.3s ease;
+}
+
+/* Изменение цвета при наведении */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #5c902e !important; /* Зеленый при наведении */
+}
+
+.swiper-button-prev {
+  left: calc(50% - 80px); /* Отодвигаем влево от точек */
+  bottom: 10px;
+  transform: translateY(50%);
+  color: white !important;
+}
+
+/* Стрелка ВПРАВО */
+.swiper-button-next {
+  right: calc(50% - 80px); /* Отодвигаем вправо от точек */
+  bottom: 10px;
+  transform: translateY(50%);
+  color: white !important;
 }

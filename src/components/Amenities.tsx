@@ -5,7 +5,7 @@ import Heading2 from "./Heading2";
 const Amenities = () => {
   return (
     <div>
-      <BackgroundBlur src="/hero4.png">
+      <BackgroundBlur src="/hero4.png" justify="start">
         <GreenBlock>
           <Heading2>Our Amenities</Heading2>
           <p className="py-10 text-xl">

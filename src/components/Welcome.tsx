@@ -5,7 +5,7 @@ import Heading2 from "./Heading2";
 const Welcome = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-0 lg:my-30 flex flex-col md:flex-row items-start ">
+    <section className="max-w-7xl mx-auto px-6 lg:my-30 flex flex-col md:flex-row items-start mt-20">
       {/* Левая часть с изображениями */}
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <div className="relative ">

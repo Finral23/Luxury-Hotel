@@ -2,6 +2,7 @@ import Amenities from "../components/Amenities";
 import Booking from "../components/Booking";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
+import Testimonials from "../components/Testimonials";
 import Welcome from "../components/Welcome";
 import { useBackground } from "../context/BackgroundContext";
 import { motion, AnimatePresence } from "framer-motion";
@@ -45,6 +46,7 @@ const HomePage = () => {
           <Booking />
           <Welcome />
           <Amenities />
+          <Testimonials />
         </div>
       </div>
     </div>
