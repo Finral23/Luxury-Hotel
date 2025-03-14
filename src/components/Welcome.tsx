@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 const Welcome = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,7 +17,7 @@ const Welcome = () => {
       </div>
 
       {/* Правая часть с текстом */}
-      <div className="w-full lg:w-1/2 text-center lg:text-left space-y-10 my-10">
+      <div className="w-full lg:w-1/2 text-center md:text-left space-y-10 my-10">
         <h2 className="text-4xl text-white tracking-wider">
           Welcome to Luxury Jungle Hotel
         </h2>
@@ -31,12 +32,7 @@ const Welcome = () => {
             {isOpen &&
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem! Suscipit aliquid quia corporis ea quaerat commodi quam nostrum architecto praesentium, sed nulla facere laborum accusantium quibusdam error assumenda similique tenetur, excepturi consequatur quidem expedita facilis rerum autem!"}
           </p>
-          <button
-            className="bg-[#5c902e] hover:bg-lime-700 text-white text-lg px-8 py-3 rounded-3xl shadow-md transition font-sf-thin "
-            onClick={() => setOpen(!isOpen)}
-          >
-            READ MORE
-          </button>
+          <Button onClick={() => setOpen(!isOpen)}>READ MORE</Button>
         </div>
         <div className="flex flex-col text-end">
           <p className="font-sf-thin">Contact</p>
