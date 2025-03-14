@@ -6,7 +6,7 @@ import DatePickerWrapper from "./DatePickerWrapper";
 const Booking = () => {
   return (
     <div className="relative flex justify-center font-sf px-4 mx-4">
-      <div className="absolute -translate-y-1/2 bg-green-dark text-slate-200 rounded-2xl flex flex-wrap md:flex-nowrap  items-center justify-between py-2 max-w-7xl w-full shadow-lg px-4 gap-y-2">
+      <div className="absolute -translate-y-1/2 bg-green-dark text-slate-200 rounded-2xl flex flex-wrap md:flex-nowrap items-center justify-between py-2 max-w-7xl w-full shadow-lg px-4 gap-y-2">
         <DatePickerWrapper />
         <CutBlock />
         <GuestPicker />

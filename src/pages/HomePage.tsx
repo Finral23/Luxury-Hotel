@@ -1,3 +1,4 @@
+import Amenities from "../components/Amenities";
 import Booking from "../components/Booking";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
@@ -43,6 +44,7 @@ const HomePage = () => {
         <div className="bg-zinc-900">
           <Booking />
           <Welcome />
+          <Amenities />
         </div>
       </div>
     </div>

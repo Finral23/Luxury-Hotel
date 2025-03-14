@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Button from "./Button";
+import Heading2 from "./Heading2";
 
 const Welcome = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-12 my-20 lg:my-30 flex flex-col md:flex-row items-start ">
+    <section className="max-w-7xl mx-auto px-6 md:px-0 lg:my-30 flex flex-col md:flex-row items-start ">
       {/* Левая часть с изображениями */}
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <div className="relative ">
@@ -18,9 +19,7 @@ const Welcome = () => {
 
       {/* Правая часть с текстом */}
       <div className="w-full lg:w-1/2 text-center md:text-left space-y-10 my-10">
-        <h2 className="text-4xl text-white tracking-wider">
-          Welcome to Luxury Jungle Hotel
-        </h2>
+        <Heading2>Welcome to Luxury Jungle Hotel</Heading2>
         <div className="md:pl-15 space-y-15">
           <p className="text-lg text-gray-300 leading-10 tracking-wider">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
@@ -32,7 +31,9 @@ const Welcome = () => {
             {isOpen &&
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem! Suscipit aliquid quia corporis ea quaerat commodi quam nostrum architecto praesentium, sed nulla facere laborum accusantium quibusdam error assumenda similique tenetur, excepturi consequatur quidem expedita facilis rerum autem!"}
           </p>
-          <Button onClick={() => setOpen(!isOpen)}>READ MORE</Button>
+          <Button onClick={() => setOpen(!isOpen)}>
+            {isOpen ? "READ LESS" : "READ MORE"}
+          </Button>
         </div>
         <div className="flex flex-col text-end">
           <p className="font-sf-thin">Contact</p>

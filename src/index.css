@@ -36,7 +36,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   font-family: "Playfair Display", serif;
 }
 
@@ -131,4 +132,27 @@ p {
     width: 100% !important;
     max-width: none !important;
   }
+}
+
+.custom-list {
+  list-style: none; /* Убираем дефолтные маркеры */
+  padding: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center; /* 🔥 Центрируем текст и иконку */
+  gap: 10px; /* Расстояние между иконкой и текстом */
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.custom-list li::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Размер иконки */
+  height: 20px;
+  background-image: url("/list.png"); /* 🔥 Твой кастомный маркер */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
