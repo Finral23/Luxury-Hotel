@@ -37,9 +37,9 @@ function LanguageSwitcher() {
 
       {/* Выпадающий список */}
       {isOpen && (
-        <ul className="absolute left-0 mt-2 w-2 pl-6 rounded-md  text-2xl">
+        <ul className="absolute left-0 mt-2 w-2 pl-6 rounded-md font-gotham  text-2xl">
           <li
-            className="px-3 py-2 text-slate-200 cursor-pointer"
+            className="px-3 py-2 text-slate-200 cursor-pointer "
             onClick={() => changeLanguage("en")}
           >
             EN

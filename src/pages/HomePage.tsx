@@ -2,6 +2,7 @@ import Amenities from "../components/Amenities";
 import Booking from "../components/Booking";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
+import Rooms from "../components/Rooms";
 import Testimonials from "../components/Testimonials";
 import Welcome from "../components/Welcome";
 import { useBackground } from "../context/BackgroundContext";
@@ -46,6 +47,7 @@ const HomePage = () => {
           <Booking />
           <Welcome />
           <Amenities />
+          <Rooms />
           <Testimonials />
         </div>
       </div>
