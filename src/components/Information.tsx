@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Heading2 from "./Heading2";
 
 const info = [
@@ -14,7 +14,7 @@ const info = [
     id: 2,
     title: "when.title",
     paragraph: "when.p",
-    image: "/room1.png",
+    image: "/info2.png",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const Information = () => {
       {activeInfo && (
         <div className="grid md:grid-cols-2 gap-6 items-center">
           {/* Анимация контента */}
-          <motion.div className="flex flex-col justify-between h-full py-5 max-w-xl">
+          <motion.div className="flex flex-col justify-between h-full py-5 md:max-w-xl">
             <motion.div
               key={activeId} // Обновление при смене
               initial={{ opacity: 0, y: 20 }}

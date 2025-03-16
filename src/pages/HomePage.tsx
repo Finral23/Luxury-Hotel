@@ -1,5 +1,6 @@
 import Amenities from "../components/Amenities";
 import Booking from "../components/Booking";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Information from "../components/Information";
 import NavBar from "../components/NavBar";
@@ -51,6 +52,9 @@ const HomePage = () => {
           <Rooms />
           <Testimonials />
           <Information />
+        </div>
+        <div className="bg-green-dark ">
+          <Footer />
         </div>
       </div>
     </div>
