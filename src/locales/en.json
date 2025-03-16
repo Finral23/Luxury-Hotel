@@ -5,6 +5,14 @@
     "login": "Login",
     "heroHeading": "Luxury Jungle Hotel",
     "heroTitle": "Ukraine. Donetsk",
-    "heroButton": "Our rooms"
-  }
+    "heroButton": "Our rooms",
+    "destination": {
+      "title": "Destination",
+      "p": "Experience the culture of Donbass and the serenity it bears through unique experiences and encounters, from diving, hiking or biking to the aah of the spa."
+    },
+    "when": {
+      "title": "When to visit",
+      "p": "Experience the culture of Donbass and the serenity it bears through unique experiences and encounters, from diving, hiking or biking to the aah of the spa."
+    }
+}
   

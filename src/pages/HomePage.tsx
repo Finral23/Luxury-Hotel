@@ -1,6 +1,7 @@
 import Amenities from "../components/Amenities";
 import Booking from "../components/Booking";
 import Hero from "../components/Hero";
+import Information from "../components/Information";
 import NavBar from "../components/NavBar";
 import Rooms from "../components/Rooms";
 import Testimonials from "../components/Testimonials";
@@ -49,6 +50,7 @@ const HomePage = () => {
           <Amenities />
           <Rooms />
           <Testimonials />
+          <Information />
         </div>
       </div>
     </div>
