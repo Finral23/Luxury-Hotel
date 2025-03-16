@@ -3,8 +3,10 @@ import GuestPicker from "./GuestPicker";
 import CutBlock from "./CutBlock";
 import DatePickerWrapper from "./DatePickerWrapper";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Booking = forwardRef<HTMLDivElement>((_, ref) => {
+  const { t } = useTranslation();
   return (
     <div
       ref={ref}
@@ -20,7 +22,7 @@ const Booking = forwardRef<HTMLDivElement>((_, ref) => {
           <div className="flex items-center gap-2 w-full flex-1 ">
             <input
               type="text"
-              placeholder="Promocode"
+              placeholder={t("booking.promocode")}
               className="bg-transparent placeholder-slate-200 text-center outline-none w-full"
             />
           </div>

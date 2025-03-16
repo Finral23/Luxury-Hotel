@@ -1,12 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { IoPersonSharp } from "react-icons/io5";
 import GuestRow from "./GuestRow";
+import { useTranslation } from "react-i18next";
 
 const GuestPicker = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const { t } = useTranslation();
 
   // Функция закрытия при клике вне блока
   useEffect(() => {
@@ -33,7 +35,7 @@ const GuestPicker = () => {
       >
         <IoPersonSharp className="text-xl" />
         <span>
-          {adults} adults, {children} children
+          {adults} {t("booking.adults")}, {children} {t("booking.children")}
         </span>
       </button>
 
@@ -41,14 +43,14 @@ const GuestPicker = () => {
       {isOpen && (
         <div className="absolute bottom-full mb-2 right-0 sm:left-0 bg-zinc-900 text-slate-300 rounded-lg shadow-lg p-4 z-50 w-48">
           <GuestRow
-            label="Adults"
+            label={t("booking.adults")}
             count={adults}
             onChange={setAdults}
             min={1}
             max={10}
           />
           <GuestRow
-            label="Children"
+            label={t("booking.children")}
             count={children}
             onChange={setChildren}
             min={0}

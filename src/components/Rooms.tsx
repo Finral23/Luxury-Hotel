@@ -2,12 +2,14 @@ import { forwardRef, useEffect, useState } from "react";
 import Button from "./Button";
 import Heading2 from "./Heading2";
 import RoomImage from "./RoomImage";
+import { useTranslation } from "react-i18next";
 
 const images = ["1", "2", "3", "4", "5", "6"]; // Массив изображений
 
 const Rooms = forwardRef<HTMLDivElement>((_, ref) => {
   const [isVisible, setVisible] = useState(false);
   const [initialCount, setInitialCount] = useState(3); // Количество картинок по умолчанию
+  const { t } = useTranslation();
 
   // Обновление количества отображаемых элементов в зависимости от ширины экрана
   useEffect(() => {
@@ -30,10 +32,12 @@ const Rooms = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="flex justify-center sm:justify-between my-5">
         <span className="hidden sm:block px-5 md:px-0">
           <Button onClick={() => setVisible(!isVisible)}>
-            {isVisible ? "HIDE" : "VIEW ALL"}
+            {isVisible
+              ? t("rooms.b.less").toUpperCase()
+              : t("rooms.b.more").toUpperCase()}
           </Button>
         </span>
-        <Heading2>Rooms & Suites</Heading2>
+        <Heading2>{t("rooms.h")}</Heading2>
       </div>
 
       {/* Галерея */}
@@ -48,7 +52,9 @@ const Rooms = forwardRef<HTMLDivElement>((_, ref) => {
       {/* Кнопка для мобильных */}
       <span className="block sm:hidden mt-4 px-5">
         <Button onClick={() => setVisible(!isVisible)}>
-          {isVisible ? "HIDE" : "VIEW ALL"}
+          {isVisible
+            ? t("rooms.b.less").toUpperCase()
+            : t("rooms.b.more").toUpperCase()}
         </Button>
       </span>
     </div>

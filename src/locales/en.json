@@ -1,18 +1,103 @@
 {
-    "welcome": "Welcome to our hotel",
     "bookNow": "Book now",
     "language": "Language",
     "login": "Login",
-    "heroHeading": "Luxury Jungle Hotel",
-    "heroTitle": "Ukraine. Donetsk",
-    "heroButton": "Our rooms",
-    "destination": {
-      "title": "Destination",
-      "p": "Experience the culture of Donbass and the serenity it bears through unique experiences and encounters, from diving, hiking or biking to the aah of the spa."
+    "hero": {
+              "heading": "Luxury Jungle Hotel",
+              "title": "Bali, Indonesia",
+              "button": "Our Rooms",
+              "p": "Discover an oasis of tranquility and luxury in the heart of Bali. Our hotel offers a unique combination of modern comfort and pristine nature, creating the perfect retreat for travelers seeking relaxation and exclusivity."
     },
-    "when": {
-      "title": "When to visit",
-      "p": "Experience the culture of Donbass and the serenity it bears through unique experiences and encounters, from diving, hiking or biking to the aah of the spa."
-    }
+    "booking": {
+      "adults": "adults",
+      "children": "children",
+      "promocode": "Promocode",
+      "search": "Search"
+    },
+    "welcome": {
+      "h": "Welcome to Luxury Jungle Hotel",
+      "p": "An exclusive retreat surrounded by lush greenery and breathtaking landscapes. Our hotel is designed for those who appreciate comfort, tranquility, and a connection with nature. Wake up to the sound of tropical birds, indulge in world-class amenities, and experience a unique blend of luxury and sustainability. Whether you're seeking adventure or relaxation, our paradise offers something for every traveler.",
+      "p.more": "Immerse yourself in the charm of our eco-friendly architecture, where modern elegance meets the raw beauty of nature. Explore hidden waterfalls, unwind in our rejuvenating spa, or dine under the stars with our exquisite culinary experiences. Each detail of your stay is crafted to provide an unforgettable escape into serenity and sophistication.",
+      "b.more": "read more",
+      "b.less": "read less",
+      "contact": "Contact",
+      "location": "Bali, Indonesia"
+    },
+    "amenities": {
+      "h": "Our Amenities",
+      "p": "At our luxury retreat, we ensure every moment of your stay is comfortable and unforgettable. Enjoy our carefully curated amenities designed for relaxation and adventure alike.",
+      "1": "Infinity Pool",
+      "2": "Gourmet Dining",
+      "3": "Fitness Center",
+      "4": "Wellness & Spa",
+      "5": "Outdoor Activities",
+      "6": "Private Beach Access",
+      "7": "Wine & Cocktail Lounge",
+      "8": "Private Bonfire Nights",
+      "9": "Helicopter Tours",
+      "10": "Cultural Evenings"
+    },
+    "rooms": {
+      "h": "Rooms & Suites",
+      "b.more": "view all",
+      "b.less": "view less"
+    },
+    "reviews": {
+      "h": "Reviews",
+      "1": {
+        "text": "An unforgettable stay! The views were breathtaking, and the service was impeccable. I felt completely at peace surrounded by nature.",
+        "name": "Dmitriy Manov",
+        "role": "Palestinian refugee"
+      },
+      "2": {
+        "text": "A perfect blend of luxury and tranquility. The private beach and the spa treatments made this a truly relaxing getaway.",
+        "name": "Valerii Sukhomlyn",
+        "role": "Freelancer"
+      },
+      "3": {
+        "text": "The best vacation I've ever had! From the delicious cuisine to the adventure activities, everything exceeded my expectations.",
+        "name": "Roman Domaratsky",
+        "role": "Photographer"
+      }
+    },
+    "information": {
+  "destination": {
+    "title": "Destination",
+    "p": "Discover the beauty and cultural richness of our exclusive retreat. Whether you're seeking adventure, relaxation, or a blend of both, our resort offers an unforgettable escape amidst breathtaking landscapes."
+  },
+  "when": {
+    "title": "When to Visit",
+    "p": "The best time to visit is during the dry season when the weather is pleasant, and outdoor activities are at their peak. However, each season brings its own charm, making it a year-round destination."
+  },
+  "how": {
+    "title": "How to Get There",
+    "p": "Our retreat is accessible by both air and land. The nearest airport offers direct flights from major cities, and we provide private transfers to ensure a seamless journey."
+  },
+  "what": {
+    "title": "What to Do",
+    "p": "From guided jungle treks and spa treatments to fine dining and cultural experiences, there’s something for every traveler. Explore the beauty of nature, indulge in gourmet cuisine, and unwind in serene surroundings."
+  }
+},
+"footer": {
+  "links": {
+    "news": "News",
+    "offers": "Offers",
+    "gallery": "Gallery",
+    "rooms": "Rooms",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "terms": "Terms and Conditions"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Bali, Indonesia"
+  },
+  "social": {
+    "title": "Find us on"
+  },
+  "copyright": "© 2024 Anomalyx Agency. All rights reserved."
+}
+
 }
   

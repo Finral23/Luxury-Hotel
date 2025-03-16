@@ -17,7 +17,7 @@ const GuestRow = ({
 }: GuestRowProps) => {
   return (
     <div className="flex justify-between items-center mb-2">
-      <span>{label}</span>
+      <span className="first-letter:uppercase">{label}</span>
       <div className="flex items-center gap-2">
         <AddButton onClick={() => onChange(count - 1)} disabled={count <= min}>
           -

@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Button from "./Button";
 import Heading2 from "./Heading2";
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
+  const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
   return (
     <section className="max-w-7xl mx-auto px-6 lg:my-30 flex flex-col md:flex-row items-start mt-20">
@@ -19,29 +21,27 @@ const Welcome = () => {
 
       {/* Правая часть с текстом */}
       <div className="w-full lg:w-1/2 text-center md:text-left space-y-10 my-10">
-        <Heading2>Welcome to Luxury Jungle Hotel</Heading2>
+        <Heading2>{t("welcome.h")}</Heading2>
         <div className="md:pl-15 space-y-15">
           <p className="text-lg text-gray-300 leading-10 tracking-wider">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            iure illum deleniti magnam earum sunt aliquid perferendis illo
-            atque, voluptate nisi natus dolores culpa quas, aut quasi amet,
-            maiores distinctio. Quae minus deleniti, sequi distinctio dolorum
-            repellendus dolores quam nisi provident explicabo neque impedit,
-            fuga perspiciatis voluptatem cumque sit laborum?
-            {isOpen &&
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem! Suscipit aliquid quia corporis ea quaerat commodi quam nostrum architecto praesentium, sed nulla facere laborum accusantium quibusdam error assumenda similique tenetur, excepturi consequatur quidem expedita facilis rerum autem!"}
+            {t("welcome.p")}
+            {isOpen && t("welcome.p.more")}
           </p>
           <Button onClick={() => setOpen(!isOpen)}>
-            {isOpen ? "READ LESS" : "READ MORE"}
+            {isOpen
+              ? t("welcome.b.less").toUpperCase()
+              : t("welcome.b.more").toUpperCase()}
           </Button>
         </div>
-        <div className="flex flex-col text-end">
-          <p className="font-sf-thin">Contact</p>
+        <div className="flex flex-col text-end text-xl">
+          <p className="font-sf-thin">{t("welcome.contact")}</p>
           <p className="font-sf-thin">+380 954 14 88</p>
+          <p className="font-sf-thin">{t("welcome.location")}</p>
           <p className="font-sf-thin">
-            Ukraine, Donetsk, Fedora Zaitseva str.13
+            <a href="mailto:anomalyx.agency@gmail.com">
+              anomalyx.agency@gmail.com
+            </a>
           </p>
-          <p className="font-sf-thin">maktraher2004@gmail.com</p>
         </div>
       </div>
     </section>

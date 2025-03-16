@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import FooterLink from "./FooterLink";
 import Logo from "./Logo";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="max-w-7xl mx-auto py-10 px-5 text-lg/6">
       {/* Контейнер для мобильного и десктопа */}
@@ -14,30 +17,30 @@ const Footer = () => {
 
         {/* Навигация (скрывается на мобильных, раскрывается на md) */}
         <div className="hidden md:block">
-          <ul className="font-sf ">
+          <ul className="font-sf">
             <li>
-              <FooterLink>News</FooterLink>
+              <FooterLink>{t("footer.links.news")}</FooterLink>
             </li>
             <li>
-              <FooterLink>Offers</FooterLink>
+              <FooterLink>{t("footer.links.offers")}</FooterLink>
             </li>
             <li>
-              <FooterLink>Gallery</FooterLink>
+              <FooterLink>{t("footer.links.gallery")}</FooterLink>
             </li>
             <li>
-              <FooterLink>Rooms</FooterLink>
+              <FooterLink>{t("footer.links.rooms")}</FooterLink>
             </li>
             <li>
-              <FooterLink>About</FooterLink>
+              <FooterLink>{t("footer.links.about")}</FooterLink>
             </li>
             <li>
-              <FooterLink>Contact</FooterLink>
+              <FooterLink>{t("footer.links.contact")}</FooterLink>
             </li>
             <li>
-              <FooterLink>FAQ</FooterLink>
+              <FooterLink>{t("footer.links.faq")}</FooterLink>
             </li>
             <li>
-              <FooterLink>Terms and Conditions</FooterLink>
+              <FooterLink>{t("footer.links.terms")}</FooterLink>
             </li>
           </ul>
         </div>
@@ -45,10 +48,8 @@ const Footer = () => {
         {/* Контактная информация */}
         <div className="text-center md:text-left md:flex md:flex-col md:justify-between">
           <div>
-            <p className="font-sf">Contact</p>
-            <p className="font-sf">
-              Ukraine, Donetsk, Fedora Zaitseva street, 13
-            </p>
+            <p className="font-sf">{t("footer.contact.title")}</p>
+            <p className="font-sf">{t("footer.contact.address")}</p>
           </div>
           <div>
             <p className="mt-4 font-sf">+380 954 14 88</p>
@@ -60,7 +61,7 @@ const Footer = () => {
 
         {/* Соцсети */}
         <div className="flex flex-col items-center space-y-3">
-          <p className="font-sf">Find us on</p>
+          <p className="font-sf">{t("footer.social.title")}</p>
           <div className="flex md:flex-col gap-4">
             <FaTwitter
               size={30}
@@ -80,7 +81,7 @@ const Footer = () => {
 
       {/* Разделитель */}
       <div className="border-t border-gray-600 mt-8 pt-4 text-center text-gray-500 font-sf">
-        &copy; 2024 Anomalyx Agency. All rights reserved.
+        {t("footer.copyright")}
       </div>
     </footer>
   );

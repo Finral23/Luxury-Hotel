@@ -3,33 +3,35 @@ import { Navigation, Pagination } from "swiper/modules";
 import BackgroundBlur from "./BackgroundBlur";
 import GreenBlock from "./GreenBlock";
 import Heading2 from "./Heading2";
+import { useTranslation } from "react-i18next";
 
 // Данные отзывов
 const reviews = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida metus nec.",
-    name: "Dmitriy Manov",
-    role: "Palestinian refugee",
+    text: "reviews.1.text",
+    name: "reviews.1.name",
+    role: "reviews.1.role",
     img: "/avatars/Dima.png",
   },
   {
     id: 2,
-    text: "Amazing experience, highly recommend!",
-    name: "Sarah Williams",
-    role: "Freelancer",
+    text: "reviews.2.text",
+    name: "reviews.2.name",
+    role: "reviews.2.role",
     img: "/avatars/Valeri.png",
   },
   {
     id: 3,
-    text: "The best jungle retreat I have ever visited. Fantastic service!",
-    name: "Carlos Rivera",
-    role: "Travel Blogger",
+    text: "reviews.3.text",
+    name: "reviews.3.name",
+    role: "reviews.3.role",
     img: "/avatars/Roman.jpg",
   },
 ];
 
 const Testimonials = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <BackgroundBlur src="/hero3.png" justify="end">
@@ -51,22 +53,22 @@ const Testimonials = () => {
                 >
                   <div className="flex flex-col max-w-xs ml-auto text-right">
                     <p className="font-gotham-italic text-start md:text-2xl text-slate-200">
-                      "{review.text}"
+                      "{t(review.text)}"
                     </p>
                     <div className="flex items-center justify-start mt-6">
                       <img
                         src={review.img}
-                        alt={review.name}
+                        alt={t(review.name)}
                         width={100}
                         height={100}
                         className="rounded-full shadow-lg"
                       />
                       <div className="text-start ml-4 text-white">
                         <p className="font-gotham-narrow text-xl">
-                          {review.name}
+                          {t(review.name)}
                         </p>
                         <p className="font-gotham-narrow text-xl">
-                          {review.role}
+                          {t(review.role)}
                         </p>
                       </div>
                     </div>

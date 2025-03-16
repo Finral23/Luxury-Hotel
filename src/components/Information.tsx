@@ -6,26 +6,26 @@ import Heading2 from "./Heading2";
 const info = [
   {
     id: 1,
-    title: "destination.title",
-    paragraph: "destination.p",
+    title: "information.destination.title",
+    paragraph: "information.destination.p",
     image: "/info1.png",
   },
   {
     id: 2,
-    title: "when.title",
-    paragraph: "when.p",
+    title: "information.when.title",
+    paragraph: "information.when.p",
     image: "/info2.png",
   },
   {
     id: 3,
-    title: "how.title",
-    paragraph: "how.p",
+    title: "information.how.title",
+    paragraph: "information.how.p",
     image: "/info3.png",
   },
   {
     id: 4,
-    title: "what.title",
-    paragraph: "what.p",
+    title: "information.what.title",
+    paragraph: "information.what.p",
     image: "/info4.png",
   },
 ];
