@@ -8,25 +8,25 @@ const info = [
     id: 1,
     title: "information.destination.title",
     paragraph: "information.destination.p",
-    image: "/info1.png",
+    image: "/info1.webp",
   },
   {
     id: 2,
     title: "information.when.title",
     paragraph: "information.when.p",
-    image: "/info2.png",
+    image: "/info2.webp",
   },
   {
     id: 3,
     title: "information.how.title",
     paragraph: "information.how.p",
-    image: "/info3.png",
+    image: "/info3.webp",
   },
   {
     id: 4,
     title: "information.what.title",
     paragraph: "information.what.p",
-    image: "/info4.png",
+    image: "/info4.webp",
   },
 ];
 

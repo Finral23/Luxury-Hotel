@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <div className="w-20 md:w-30">
-      <img src="/logo.png" alt="anomalyx logo" />
+      <img src="/logo.webp" alt="anomalyx logo" />
     </div>
   );
 };

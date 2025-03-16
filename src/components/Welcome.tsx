@@ -12,7 +12,7 @@ const Welcome = () => {
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <div className="relative ">
           <img
-            src="/welcome.png"
+            src="/welcome.webp"
             alt="Luxury Jungle Hotel"
             className="w-3xl h-3xl"
           />

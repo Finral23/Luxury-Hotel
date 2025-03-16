@@ -12,21 +12,21 @@ const reviews = [
     text: "reviews.1.text",
     name: "reviews.1.name",
     role: "reviews.1.role",
-    img: "/avatars/Dima.png",
+    img: "/avatars/Dima.webp",
   },
   {
     id: 2,
     text: "reviews.2.text",
     name: "reviews.2.name",
     role: "reviews.2.role",
-    img: "/avatars/Valeri.png",
+    img: "/avatars/Valeri.webp",
   },
   {
     id: 3,
     text: "reviews.3.text",
     name: "reviews.3.name",
     role: "reviews.3.role",
-    img: "/avatars/Roman.jpg",
+    img: "/avatars/Roman.webp",
   },
 ];
 
