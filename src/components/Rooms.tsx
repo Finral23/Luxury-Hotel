@@ -26,6 +26,19 @@ const Rooms = forwardRef<HTMLDivElement>((_, ref) => {
     return () => window.removeEventListener("resize", updateColumns);
   }, []);
 
+  // Функция переключения галереи
+  const toggleGallery = () => {
+    setVisible((prev) => {
+      if (prev) {
+        // Если "Показать меньше" → прокрутка к началу блока
+        (ref as React.RefObject<HTMLDivElement>)?.current?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+      return !prev;
+    });
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-2 scroll-mt-18" ref={ref}>
       {/* Заголовок и кнопка */}
@@ -51,7 +64,7 @@ const Rooms = forwardRef<HTMLDivElement>((_, ref) => {
 
       {/* Кнопка для мобильных */}
       <span className="block sm:hidden mt-4 px-5">
-        <Button onClick={() => setVisible(!isVisible)}>
+        <Button onClick={toggleGallery}>
           {isVisible
             ? t("rooms.b.less").toUpperCase()
             : t("rooms.b.more").toUpperCase()}
