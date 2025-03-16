@@ -2,7 +2,11 @@ import { useTranslation } from "react-i18next";
 import HeroImage from "./HeroImage";
 import { memo } from "react";
 
-const Hero = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const Hero = ({ onClick }: Props) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -19,7 +23,10 @@ const Hero = () => {
           nulla vitae expedita possimus. Commodi quos rerum magni possimus
           quibusdam dignissimos, ab porro.
         </p>
-        <button className="bg-gradient-to-b from-black to-230% px-10 py-2  text-2xl uppercase tracking-wider rounded-full border-2 border-slate-200 cursor-pointer hover:bg-slate-700">
+        <button
+          onClick={() => onClick()}
+          className="bg-gradient-to-b from-black to-230% px-10 py-2  text-2xl uppercase tracking-wider rounded-full border-2 border-slate-200 cursor-pointer hover:bg-slate-700"
+        >
           {t("heroButton")}
         </button>
       </div>

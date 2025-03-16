@@ -9,13 +9,23 @@ import Testimonials from "../components/Testimonials";
 import Welcome from "../components/Welcome";
 import { useBackground } from "../context/BackgroundContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
   const { bgImage } = useBackground();
   const { i18n } = useTranslation();
   const [prevImage, setPrevImage] = useState(bgImage);
+  const bookingRef = useRef<HTMLDivElement>(null);
+  const roomsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToBooking = () => {
+    bookingRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToRooms = () => {
+    roomsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     setPrevImage(bgImage); // ✅ Теперь фон плавно обновляется
@@ -43,13 +53,13 @@ const HomePage = () => {
 
       {/* Контент */}
       <div className="relative z-20">
-        <NavBar />
-        <Hero />
+        <NavBar onClick={scrollToBooking} />
+        <Hero onClick={scrollToRooms} />
         <div className="bg-zinc-900">
-          <Booking />
+          <Booking ref={bookingRef} />
           <Welcome />
           <Amenities />
-          <Rooms />
+          <Rooms ref={roomsRef} />
           <Testimonials />
           <Information />
         </div>

@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* Навигация (скрывается на мобильных, раскрывается на md) */}
         <div className="hidden md:block">
-          <ul className="font-sf space-y-2">
+          <ul className="font-sf ">
             <li>
               <FooterLink>News</FooterLink>
             </li>
@@ -43,15 +43,19 @@ const Footer = () => {
         </div>
 
         {/* Контактная информация */}
-        <div className="text-center md:text-left">
-          <p className="font-sf">Contact</p>
-          <p className="font-sf">
-            Ukraine, Donetsk, Fedora Zaitseva street, 13
-          </p>
-          <p className="mt-4 font-sf">+380 954 14 88</p>
-          <FooterLink href="mailto:anomalyx.agency@gmail.com">
-            anomalyx.agency@gmail.com
-          </FooterLink>
+        <div className="text-center md:text-left md:flex md:flex-col md:justify-between">
+          <div>
+            <p className="font-sf">Contact</p>
+            <p className="font-sf">
+              Ukraine, Donetsk, Fedora Zaitseva street, 13
+            </p>
+          </div>
+          <div>
+            <p className="mt-4 font-sf">+380 954 14 88</p>
+            <FooterLink href="mailto:anomalyx.agency@gmail.com">
+              anomalyx.agency@gmail.com
+            </FooterLink>
+          </div>
         </div>
 
         {/* Соцсети */}
